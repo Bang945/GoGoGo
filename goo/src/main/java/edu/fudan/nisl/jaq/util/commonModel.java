@@ -1,16 +1,10 @@
 package edu.fudan.nisl.jaq.util;
 
-import java.util.Map;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Invocation;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
-
-import org.yaml.snakeyaml.Yaml;
-
-import net.sf.json.JSONObject;
 
 public class commonModel {
 	
@@ -36,6 +30,20 @@ public class commonModel {
 		WebTarget tokenTarget = client.target(targetURI);
 		Invocation.Builder invocation = tokenTarget
 				.request(MediaType.APPLICATION_JSON_TYPE);
+
+		// configure header
+		invocation.header("Accept", "application/json");
+		invocation.header("Content-Type", "application/json");
+		
+		return invocation;
+	}	
+
+	public static Invocation.Builder buildGetInvocationWithoutToken(String targetURI){
+		// init obj
+		Client client = ClientBuilder.newClient();
+		WebTarget tokenTarget = client.target(targetURI);
+		Invocation.Builder invocation = tokenTarget
+				.request(MediaType.TEXT_PLAIN);
 
 		// configure header
 		invocation.header("Accept", "application/json");
@@ -73,12 +81,6 @@ public class commonModel {
 		
 		return invocation;
 	}
-	public static JSONObject yamlToJson(String temp){		
-		Yaml yaml = new Yaml();
-		Map map = (Map) yaml.load(temp);
-		JSONObject json = JSONObject.fromObject(map);
-		
-		return json;
-	}
+	
 	
 }
