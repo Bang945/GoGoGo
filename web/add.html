@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>我要买</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="add.css" rel="stylesheet">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+      var txt = $("#txt").val();
+      console.log(txt);
+    </script>
+
+  </head>
+
+  <body>
+<div class="header">
+        <ul class="nav nav-pills pull-right" role="tablist">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">About</a></li>
+          <li role="presentation"><a href="#">Contact</a></li>
+        </ul>
+        <h1 class="text-muted" align="center"><b>买买买</b></h1>
+        <hr>
+      </div>
+    <div class="container">
+
+      <div class="page-header">
+        <h1>我要买</h1>
+        <p class="lead">请填写相关信息.</p>
+      </div>
+
+      <h3>优惠信息</h3>
+      <p>请填写您要满足的优惠信息.</p>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon">折</span>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+
+
+      <h3>购买信息</h3>
+      <p>请填写您已经满足的购买信息.例如，已经购买多少钱了？已经购买多少件了？</p>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon">已买</span>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+
+      <h3>如何找到我</h3>
+      <p>请填写一些标识性信息帮助他人找到您，例如我穿了红色上衣，背了个双肩包。</p>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon">找我</span>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+
+      <h3>停留时间</h3>
+      <p>请填写您会在这里停留多久。例如我会在13：00到13：30在这里</p>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon">时间</span>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+
+      <h3>备注</h3>
+      <p>请填写其他信息。</p>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon">其他</span>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <hr/>
+      <div class="inner cover">
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-default">我要买</a>
+        </p>
+      </div>
+    </div> <!-- /container -->
+
+  </body>
+</html>
