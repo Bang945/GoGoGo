@@ -30,5 +30,38 @@ function login(){
 	});
 	console.log("success");
 }
+function message(){
+	var searchParam = "dealId=1";//js get dealId
+	console.log(searchParam);
+	$.ajax({    
+        type:"POST",    
+        url:"./shop/message.json",
+        dataType: "json",//返回json格式的数据 
+        data: searchParam,    
+        success:function(data){
+        	console.log(data);
+        	console.log("success");
+        }
+	});
+	console.log("success");
+}
+function shop(){
+	var searchParam = "jd=31.236776799999998&wd=121.5027612";//js get location
+	console.log(searchParam);
+	$.ajax({    
+        type:"POST",    
+        url:"./shop/query.json",
+        dataType: "json",//返回json格式的数据 
+        data: searchParam,    
+        success:function(data){
+        	console.log(data);
+        	console.log("success");
+        }
+	});
+	console.log("success");
+}
+$(document).ready(function(){
+	message();
+});
 </script>
 </html>

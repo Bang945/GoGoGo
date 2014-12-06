@@ -1,5 +1,6 @@
 package edu.fudan.nisl.jaq.controller;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -51,8 +52,12 @@ public class BuyController {
 	@RequestMapping("/create.do")
 	public @ResponseBody String createDeal(String shopName, String info, int minutes, HttpServletRequest request) {	
 		HttpSession session=request.getSession();
+		//get deadline
 		Date deadline = new Date();
-		return dealService.createDeal(shopName, info, (int)session.getAttribute("userid"), deadline);
+		Calendar rightNow = Calendar.getInstance();
+        rightNow.setTime(deadline);
+        rightNow.add(Calendar.MINUTE, -minutes);
+		return dealService.createDeal(shopName, info, (int)session.getAttribute("userid"), rightNow.getTime());
 	}
 	
 	@RequestMapping("/send.do")

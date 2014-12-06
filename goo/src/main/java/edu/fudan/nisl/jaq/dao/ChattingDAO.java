@@ -3,9 +3,11 @@ package edu.fudan.nisl.jaq.dao;
 import java.util.List;
 
 import org.hibernate.Query;
+import org.springframework.stereotype.Repository;
 
 import edu.fudan.nisl.jaq.model.Chatting;
 
+@Repository
 public class ChattingDAO  extends GenericHibernateDAO<Chatting,Long> {
 	@SuppressWarnings("unchecked")
 	public List<Chatting> findChattingByDeal(int dealId){

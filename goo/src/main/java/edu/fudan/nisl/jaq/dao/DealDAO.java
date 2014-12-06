@@ -4,9 +4,11 @@ import java.util.Date;
 import java.util.List;
 
 import org.hibernate.Query;
+import org.springframework.stereotype.Repository;
 
 import edu.fudan.nisl.jaq.model.Deal;
 
+@Repository
 public class DealDAO  extends GenericHibernateDAO<Deal,Long> {
 	@SuppressWarnings("unchecked")
 	public List<Deal> findDealByShop(String shopName){

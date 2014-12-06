@@ -32,7 +32,7 @@
         <!--hibernate.dialect 只是Hibernate使用的数据库方言,就是要用Hibernate连接那种类型的数据库服务器。--> 
           <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect </property> 
         <!--指定映射文件为“hibernate/ch1/UserInfo.hbm.xml”-->        
-		<mapping resource="edu/fudan/nisl/jaq/model/User.hbm.xml"/>
+		<mapping resource="edu/fudan/nisl/jaq/model/Users.hbm.xml"/>
 		<mapping resource="edu/fudan/nisl/jaq/model/Deal.hbm.xml"/>
 		<mapping resource="edu/fudan/nisl/jaq/model/Chatting.hbm.xml"/>
   </session-factory> 
