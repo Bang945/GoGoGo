@@ -1,0 +1,424 @@
+message.json
+{
+    "logs": [
+        {
+            "deal": 1,
+            "id": 1,
+            "info": "hello",
+            "timeStamp": {
+                "date": 6,
+                "day": 6,
+                "hours": 14,
+                "minutes": 42,
+                "month": 11,
+                "nanos": 0,
+                "seconds": 22,
+                "time": 1417848142000,
+                "timezoneOffset": -480,
+                "year": 114
+            },
+            "user": {
+                "id": 1,
+                "usersEmail": "",
+                "usersInfo": "",
+                "usersName": "admin",
+                "usersPassword": "123456",
+                "usersPhone": "",
+                "usersRoleId": 0
+            }
+        },
+        {
+            "deal": 1,
+            "id": 2,
+            "info": "_(:3ゝ∠)_",
+            "timeStamp": {
+                "date": 6,
+                "day": 6,
+                "hours": 14,
+                "minutes": 42,
+                "month": 11,
+                "nanos": 0,
+                "seconds": 44,
+                "time": 1417848164000,
+                "timezoneOffset": -480,
+                "year": 114
+            },
+            "user": {
+                "id": 1,
+                "usersEmail": "",
+                "usersInfo": "",
+                "usersName": "admin",
+                "usersPassword": "123456",
+                "usersPhone": "",
+                "usersRoleId": 0
+            }
+        }
+    ]
+}
+
+
+shop
+{
+    "shops": [
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "9f92725575643b1cbaeadbe47204a74e9ceb9ab5",
+            "shopName": "Morton's Steakhouse",
+            "type": [
+                
+            ],
+            "vicinity": "8 
+
+Century Ave, Pudong, Shanghai"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "857d4ec410b728333f2fcfa15ad165f4de59800d",
+            "shopName": "Haiku by Hatsune",
+            "type": [
+                
+            ],
+            "vicinity": "国金中
+
+心商场LG1楼, 8 Century Ave, Pudong, Shanghai"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "5cfac5645447605661427f8d642b5fd1e390379a",
+            "shopName": "意索娜意大利餐厅",
+            "type": [
+                
+            ],
+            "vicinity": "世纪大
+
+道8号, 上海国金中心4楼, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "795aca206123f053a50f0a7cf64f2d3d7a37997e",
+            "shopName": "快楽檸檬",
+            "type": [
+                
+            ],
+            "vicinity": "8号上海国金中
+
+心商场 Century Ave, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "7d009c0252f6f0f062fe388e03eae4c204b2d5e7",
+            "shopName": "焼肉孫三郎",
+            "type": [
+                
+            ],
+            "vicinity": "8号上海国金
+
+中心商场 Century Ave, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "ba2240e8f643be87bd4af78e6265a5de13b45b6e",
+            "shopName": "Baker&Spice Cafe",
+            "type": [
+                
+            ],
+            "vicinity": "8号上
+
+海国金中心商场 Century Ave, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "3c51b406e5667986f1270638dab95ec44a3f8b45",
+            "shopName": "麦当劳",
+            "type": [
+                
+            ],
+            "vicinity": "世纪大道8号, 
+
+LG1-17, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "e802dfe5f8d81c7f910b8422eaaf5d42969da3af",
+            "shopName": "Starbucks Coffee",
+            "type": [
+                
+            ],
+            "vicinity": "8 
+
+Century Ave, Pudong, Shanghai"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "eab1fefcfe7820520ecca33701bc578605e9761d",
+            "shopName": "乐透--浦东店",
+            "type": [
+                
+            ],
+            "vicinity": "Shanghai 
+
+Information Tower, 211 Century Ave, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "1e44f331b9640ca4768aee0c702b3f65637590c0",
+            "shopName": "yogo juice",
+            "type": [
+                
+            ],
+            "vicinity": "Goldmine 
+
+Plaza, 88 Century Ave, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "903a265112650d87724e2edf14c92f10365903ee",
+            "shopName": "多楽星",
+            "type": [
+                
+            ],
+            "vicinity": "8号上海国金中心
+
+商场 Century Ave, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "b7f176bb7137f30e15429bd83824dd592ae776c3",
+            "shopName": "赛百味",
+            "type": [
+                
+            ],
+            "vicinity": "世纪大道8号, 上
+
+海国金中心商场, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "57a132506705c0c53ba7fe1476fc84e4df64c831",
+            "shopName": "Jika Udon",
+            "type": [
+                
+            ],
+            "vicinity": "国金中心商场
+
+LG1-18号, 8 Century Ave, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "9f0dad1c582b10b7e96f46f3b226c915510cd0a2",
+            "shopName": "天琴咖啡吧",
+            "type": [
+                
+            ],
+            "vicinity": "银城西路17弄
+
+377号, Pudong, Shanghai"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "0592f9198d8f791036e3998f0b0da9eb9e7afd5d",
+            "shopName": "上海人家陆家嘴店",
+            "type": [
+                
+            ],
+            "vicinity": "银城西
+
+路17弄e座58号,金茂大厦以西约150米路南,东方明珠东侧路南,陆家嘴美食城内, Pudong, Shanghai"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "a104ba8eca67af5832209ee78719e6757d4a2224",
+            "shopName": "金
+
+牛苑越南菜館",
+            "type": [
+                
+            ],
+            "vicinity": "8号上海国金中心商场 Century Ave, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "663571ce88445becba7c3f80ce010211fd8fec35",
+            "shopName": "Annvita Tea Boutique",
+            "type": [
+                
+            ],
+            "vicinity": "8
+
+号上海国金中心商场 Century Ave, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "8c8cee4dd3d78ea9be864f4390f2fe4ef9a2a41a",
+            "shopName": "泰河汤馆",
+            "type": [
+                
+            ],
+            "vicinity": "190 
+
+Huayuanshiqiao Rd, Pudong"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "a3e4e001de77539d4928a6a925f57665794589de",
+            "shopName": "西贡餐厅",
+            "type": [
+                
+            ],
+            "vicinity": "银城西路17弄41
+
+号,金茂大厦以西约150米路南,东方明珠东侧路南,陆家嘴美食城内, Pudong, Shanghai"
+        },
+        {
+            "deals": [
+                
+            ],
+            "distance": 7089.692865594559,
+            "geometry": {
+                "lng": 121.0,
+                "lat": 31.0
+            },
+            "id": "f30e594e810e5e2f9df9dbdd34946d573f9e1ec3",
+            "shopName": "上
+
+海金斯碗美食有限公司",
+            "type": [
+                
+            ],
+            "vicinity": "银城西路377号, Pudong, Shanghai"
+        }
+    ]
+}

@@ -13,9 +13,9 @@
 			<!-- input class="inputStyle" id="authencode" type="text" name="authencode" placeholder="验证码"/> -->
 			<input class="buttonStyle" typee="button" value="登陆" onclick="login()"/>
 		</form>
-		<input id="demo" type="text"/>
+		<div id="demo"/></div>
 </body>
- <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
 function login(){
 	var searchParam = "username="+$("#username").val()+"&password="+$("#password").val();
@@ -46,7 +46,7 @@ function message(){
 	});
 	console.log("success");
 }
-function shop(position){
+function shop(position){console.log("start shop");
 	var searchParam = "wd=" + position.coords.latitude + "&jd=" + position.coords.longitude;//js get location
 	console.log(searchParam);
 	$.ajax({    
@@ -61,11 +61,26 @@ function shop(position){
 	});
 	console.log("success");
 }
+function shop_static(error){
+var searchParam = "wd=31.236776799999998&jd=121.5027612";//js get location
+console.log(searchParam);
+$.ajax({    
+    type:"POST",    
+    url:"./shop/query.json",
+    dataType: "json",//返回json格式的数据 
+    data: searchParam,    
+    success:function(data){
+    	console.log(data);
+    	console.log("success");
+    }
+});
+console.log("success");
+}
 function getLocation()
 {
   if (navigator.geolocation)
     {
-    navigator.geolocation.getCurrentPosition(showPosition,showError);
+    navigator.geolocation.getCurrentPosition(shop,shop_static);
     }
   else{document.getElementById("demo").innerHTML="Geolocation is not supported by this browser.";}
 }

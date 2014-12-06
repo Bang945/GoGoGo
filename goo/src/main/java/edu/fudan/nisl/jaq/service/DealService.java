@@ -21,11 +21,11 @@ public class DealService {
 	@Autowired
 	ChattingDAO chattingDao;
 	
-	public List<Shop> queryDeal(double jd, double wd, List<Shop> shops){
+	public List<Shop> queryDeal(double wd, double jd, List<Shop> shops){
 		List<Shop> result = new ArrayList<Shop>();
 		for(Shop shop : shops){
 			shop.setDeals(dealDao.findDealByShop(shop.getShopName()));
-			shop.setDistance(getDistatce(jd,wd,shop.getGeometry().get("lat"),shop.getGeometry().get("lng")));
+			shop.setDistance(getDistatce(wd,jd,shop.getGeometry().get("lat"),shop.getGeometry().get("lng")));
 			result.add(shop);
 		}
 		return result;

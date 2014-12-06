@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geolocation</title>
+  <meta charset="utf-8">
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<p id="demo"></p>
+<!-- <button onclick="getLocation()">试一下</button> -->
+
+<script>
+var x=document.getElementById("demo");
+
+$(document).ready(function(){
+  getLocation();
+});
+
+function getLocation()
+  {
+    if (navigator.geolocation)
+      {
+      navigator.geolocation.getCurrentPosition(showPosition,showError);
+      }
+    else{x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+
+function showPosition(position)
+  {
+    var loc = "latitude="+ position.coords.latitude + "&longitude=" + position.coords.longitude;
+    $.ajax({
+        type:"POST",    
+        url:"LoginServlet",
+        dataType: "json",//返回json格式的数据 
+        data: loc,    
+        success:function(data){
+          window.location.href="home_page.jsp";
+        }
+    });
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br />Longitude: " + position.coords.longitude;  
+  }
+function showError(error)
+  {
+  switch(error.code) 
+    {
+    case error.PERMISSION_DENIED:
+      x.innerHTML="User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML="Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML="The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML="An unknown error occurred."
+      break;
+    }
+  }
+</script>
+</body>
+</html>

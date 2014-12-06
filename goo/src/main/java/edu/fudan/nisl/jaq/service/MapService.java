@@ -9,7 +9,7 @@ import edu.fudan.nisl.jaq.util.LocationServiceUtil;
 
 @Service
 public class MapService {
-	public List<Shop> getNearbyShop(double lat, double lng){
+	public List<Shop> getNearbyShop(double lng, double lat){
 		return LocationServiceUtil.getNearby(lat, lng);
 	}
 	
