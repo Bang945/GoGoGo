@@ -37,10 +37,35 @@
       "name":"Hot Pot",
       "distance":100000,
       "number":5};
+      // TODO: Set lat and lng in form.
+
+
+        $.ajax({
+          type: "post",
+          url: "/query.json",
+          data: $("localGeometryForm").serialize();
+          success: function(data) {  
+            alert("成功！");  
+
+            // Fulfill shop list
+            for (int i = 0; i < data.shops.length; i ++) {
+              getShop(data.shops[i].shopName, data.shops[i].distance, data.shops[i].deals.size);
+
+              // TODO: For each deal
+            }
+
+          },  
+          error: function(data) {  
+            alert("Sorry! I !");  
+          }  
+        })
+ 
 
     name0 = JSONObject.name;
     dis0 = JSONObject.distance;
     number = JSONObject.number;
+
+
 
     getShop(name0,dis0,number);
     // getShop("Pizza",1000000,3);
@@ -60,6 +85,12 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+    <form id="localGeometryForm" name="localGeometryForm" disable="disable" />
+      <input type="hidden" name="lat" value="" disable="disable" />
+      <input type="hidden" name="lng" value="disable" />
+
+    </form>
+
     <div class="navbar-wrapper">
       <div class="container">
 
