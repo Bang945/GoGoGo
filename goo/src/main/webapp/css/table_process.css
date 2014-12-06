@@ -1,0 +1,58 @@
+
+.panelpc .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+	background-color: #D6D6D6 !important;	
+}
+
+.panelpc .table-striped>tbody>tr:first-child>td, .table-striped>tbody>tr:first-child>th {
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #8BA5C4 !important;
+}
+
+.panelpc .table-striped>tbody>tr>td, .table-striped>tbody>tr>th {
+	font-size: 2px;
+	width: 6%;
+}
+
+.panelpc table>tbody>tr>td:nth-child(1) {
+	width: 10%;
+	text-align:center;
+}
+
+.panelpc table>tbody>tr>td:nth-child(2) {
+	width: 30%;
+	text-align:center;
+}
+
+.panelpc table>tbody>tr>td:nth-child(3) {
+	width: 20%;
+	text-align:center;
+}
+
+.panelpc table>tbody>tr>td:nth-child(4) {
+	width: 10%;
+	text-align:center;
+}
+
+.panelpc table>tbody>tr>td:nth-child(5) {
+	width: 30%;
+	text-align:center;
+}
+
+.panelpc {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:70px;
+}
+
+.above-table {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+

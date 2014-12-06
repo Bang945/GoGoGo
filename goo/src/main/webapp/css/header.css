@@ -1,0 +1,117 @@
+/*css写的超混乱 估计以后要跳坑orz....*/
+.header a {
+	color: white !important;
+}
+
+.secondTab a {
+	color: white !important;
+}
+
+.welcome {
+	float: right;
+	margin-right: 9px;
+	height: 30px;
+	top: 8px;
+}
+
+.header	{
+	background: #354986;
+	height: 80px;
+}
+
+.text {
+	font-family: cursive;
+	color: white;
+	
+	font-weight: 600;
+	padding-left: 4%;
+}
+
+.text1 {
+	letter-spacing: 4px;
+	font-size:25px;
+	padding-top: 19px;
+}
+.text2 {
+	font-size:13px;
+	display: inline-block;
+}
+
+.firstTab {
+	min-width: 100px;
+	position: absolute;
+	left: 34%;
+	top: 51px;
+	height: 32px;
+}
+
+.nav {
+	background-color: #354986;
+	font-weight: 600;
+}
+
+.nav-tabs>li>a {
+	margin-right: 0px !important;
+	line-height: 0.5 !important;
+	border-radius: 0 0 0 0 !important;
+}
+
+.nav-tabs>li>a:hover {
+	background-color: transparent !important;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+	background-color: #BD362F !important;
+	border: 1px solid white !important;
+	border-radius: 0 0 0 0  !important;
+}
+
+.black_blank {
+	height: 31px;
+	background: #171717;
+	border: 1px solid #171717;
+}
+
+.secondTab .nav {
+	background: #171717 !important;
+	position: absolute;
+	margin-top: 2px;
+	left: 36%;
+	height: 30px;
+	font-weight: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 900px;
+	font-weight: 400 !important;
+}
+
+/*path*/
+ .lytMap {
+	position: relative;
+	top:10px;
+	height: 25px;
+	background-color: #f2f2f2;
+	overflow: hidden;
+}
+
+.lytMap .map {
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	padding-top: 3px;
+	padding-left: 25px;
+	font-size: 13px;
+	color: #174b7c;
+	background-image: url('image/mapBg.jpg');
+	background-repeat: no-repeat;
+	background-position: left top;
+	overflow: hidden;
+} 
+ 
+
+
+

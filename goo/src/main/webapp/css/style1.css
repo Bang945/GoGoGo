@@ -1,0 +1,177 @@
+
+
+html body {
+	height: 100%;
+	min-width: 1200px;
+	min-height: 780px;
+}
+
+html {
+	
+}
+
+/* This is for homepage only */
+
+.black_text {
+	background: #171717;
+	color: white;
+	height: 31px;
+	font-size: 12px;
+	padding-top: 7px;
+	text-align: right;
+}
+
+.login {
+	position: absolute;
+	left: 35%;
+	top: 35px;
+}
+
+.inputStyle {
+	margin: 6px;
+}
+
+.buttonStyle {
+	background-color: #BD362F;
+	border: 1px solid white;
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	margin: 6px;
+}
+
+#usrname {
+
+}
+
+.homeImg {
+	width: 150px;
+}
+
+#firstImg {
+	position: absolute;
+	left: 90%;
+	top: 150px;
+	width: 160px;
+}
+
+#secondImg {
+	position: absolute;
+	left: 16%;
+	top: 293px;
+	width: 160px;
+}
+
+#thirdImg {
+	position: absolute;
+	left: 36%;
+	top: 294px;
+	width: 160px;
+}
+
+#fourthImg {
+	position: absolute;
+	left: 56%;
+	top: 287px;
+	width: 160px;
+}
+
+#fifthImg {
+	position: absolute;
+	left: 76%;
+	top: 269px;
+	width: 160px;
+}
+
+.imgText {
+	margin-top: 10px;
+	color: #BD362F;
+	text-align: center;
+	font-size: 30px;
+	font-family: serif;
+	font-weight: bold;
+}
+
+.body {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #354986;
+	height: 79%;
+	min-height: 700px;
+}
+
+h2 {
+ font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+ color: #000;
+ margin: 0px;
+ padding: 0px 0px 0px 15px;
+}
+ 
+/*- Menu Tabs--------------------------- */ 
+
+
+#tabs {
+  float:left;
+  width:100%;
+  background:#FFF;
+  font-size:93%;
+  line-height:normal;
+  height: 100px;
+  }
+#tabs ul {
+margin:0;
+padding:10px 10px 0 50px;
+list-style:none;
+    }
+#tabs li {
+  display:inline;
+  margin:0;
+  padding:0;
+  }
+#tabs a {
+  float:left;  
+  margin:0;
+  padding:0 0 0 4px;
+  text-decoration:none;
+  font:#354986; 
+  }
+#tabs a span {
+  float:left;
+  display:block;     
+  padding:5px 15px 4px 6px;
+  color:#666;
+  }
+
+#tabs a span {float:none;}
+/* End IE5-Mac hack */
+#tabs a:hover span {
+  color:#BD362F;
+  }
+#tabs a:hover {
+  background-position:0% -42px;
+  }
+#tabs a:hover span {
+  background-position:100% -42px;
+  } 
+ 
+ 
+#tabs_container {
+	padding: 40px;
+	overflow: hidden;
+	position: relative;
+	background: white;
+}
+
+#tabs_container div {
+	margin-right: 40px;
+}
+
+.content {
+
+	padding:10px;
+	
+}
+

@@ -1,0 +1,107 @@
+/*css写的超混乱 估计以后要跳坑orz....*/
+ 
+.panel .table-striped>tbody>tr>td, .panel .table-striped>tbody>tr>th {
+background-color: #EDEDED !important;
+}
+ 
+.panel .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+	background-color: white !important;
+
+}
+
+ 
+.panel table>thead>tr>td {
+color: white;
+font-weight: bold;
+font-size: 15px !important;
+background-color: #8BA5C4 !important;
+}
+ 
+ 
+.panel .table-bordered>tbody>tr>td {
+border: 0px solid #FFF;
+}
+
+
+
+.panel table>tbody>tr>td:nth-child(1) {
+width: 5%;
+
+}
+ 
+.panel table>tbody>tr>td:nth-child(2) {
+width: 10%;
+font-weight:bold;
+}
+ 
+.panel table>tbody>tr>td:nth-child(3) {
+width: 40%;
+font-weight:bold;
+text-align:left;
+}
+
+.panel table>tbody>tr>td:nth-child(5) {
+color: blue;
+}
+ 
+.panel table>tbody>tr>td{
+    padding:3px !important;
+    font-size:13px !important;
+    text-align:left;
+
+}
+ 
+.panel {
+width: 100%;
+margin-left: 0px !important;
+margin-right: 0px !important;
+}
+ 
+.above-table {
+width: 98%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+margin-top: 20px;
+font-size:13px;
+}
+ 
+.above-table input {
+width: 80px;
+height: 25px;
+}
+ 
+.op1 {
+width: 80px;
+}
+ 
+.above-table select {
+height: 25px !important;
+}
+ 
+ 
+.below-table {
+min-height: 100px;
+width: 98%;
+margin-left: auto;
+margin-right: auto;
+}
+ 
+.bottom-right {
+float: right;
+color: #354986;
+}
+ 
+ 
+.below-table hr {
+border: 1px dashed #EDEDED;
+margin-bottom: 10px;
+}
+ 
+#table_submit {
+float: right;
+}
+ 
+.bottom-right-btn {
+color: black;
+}

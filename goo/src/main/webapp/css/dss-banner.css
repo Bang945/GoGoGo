@@ -1,0 +1,14 @@
+/*
+	请不要定义太通用或太简短的导航路径，比如：
+	a{}
+	input{}
+	.name{}
+	.text{}
+	#text1{}
+	#mytable{}
+	
+	尽量使用".dss-"开头然后沿路导航
+	 
+*/
+.dss-banner {}
+.dss-banner .banner_navi_blocks{}

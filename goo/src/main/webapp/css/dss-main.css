@@ -1,0 +1,19 @@
+/*
+	请不要定义太通用或太简短的导航路径，比如：
+	a{}
+	input{}
+	.name{}
+	.text{}
+	#text1{}
+	#mytable{}
+	
+	尽量使用".dss-"开头然后沿路导航
+	 
+*/
+.dss-navi-blocks {}
+.dss-navi-blocks table {margin: 0 40% ;text-align: center;}.
+.dss-navi-blocks table td{border:solid 1px black;}
+.dss-navi-blocks table td a {border:solid 1px black;margin:1px;}
+.dss-navi-blocks table td a.active{background:#BD362F;color: white;}
+.dss-navi-breadcrumb {}
+.dss-content {}
