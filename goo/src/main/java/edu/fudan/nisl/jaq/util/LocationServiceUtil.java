@@ -14,9 +14,9 @@ public class LocationServiceUtil {
     private static String GOOGLE_API_KEY = "AIzaSyBARZOyD4L5FHUj8kNg9WXwowgickaGV7A";
     private static String GOOGLE_API_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
     private static String DEFAULT_SEARCH_TYPE = "food";
-    private static Double DEFAULT_SEARCH_RADIUS = 100.0;
+    private static double DEFAULT_SEARCH_RADIUS = 100.0;
 
-    private static String buildUrl(Double lat, Double lng, Double radius, String type) {
+    private static String buildUrl(double lat, double lng, double radius, String type) {
         String url = GOOGLE_API_URL + "location=" + lat + "," + lng;
         url += "&radius=" + radius;
         url += "&types=" + type;
@@ -25,11 +25,11 @@ public class LocationServiceUtil {
         return url;
     }
     
-    public static List<Shop> getNearby(Double lat, Double lng) {
+    public static List<Shop> getNearby(double lat, double lng) {
         return getNearby(lat, lng, DEFAULT_SEARCH_RADIUS, DEFAULT_SEARCH_TYPE);
     }
     
-    public static List<Shop> getNearby(Double lat, Double lng, Double radius, String type) {
+    public static List<Shop> getNearby(double lat, double lng, double radius, String type) {
         Response response = commonModel.buildInvocationWithoutToken(buildUrl(lat, lng, radius, type)).get();
         if (response.getStatus() != 200) return null;
         
@@ -47,7 +47,7 @@ public class LocationServiceUtil {
     }
 
     public static void main(String[] args) {
-        Double lat = 31.236776799999998, lng = 121.5027612;
+        double lat = 31.236776799999998, lng = 121.5027612;
         getNearby(lat, lng);
     }
     
