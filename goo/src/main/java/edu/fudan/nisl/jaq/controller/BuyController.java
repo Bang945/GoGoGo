@@ -29,7 +29,7 @@ public class BuyController {
 	
 	@RequestMapping("/query.json")
 	public @ResponseBody Object listAllDeal(double jd, double wd) {	
-		List<Shop> list = dealService.queryDeal(mapService.getNearbyShop(jd, wd));
+		List<Shop> list = dealService.queryDeal(jd, wd, mapService.getNearbyShop(jd, wd));
 		JSONObject json = new JSONObject();
 		json.put("shops", list);
 		return json;
