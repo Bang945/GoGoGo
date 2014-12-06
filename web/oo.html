@@ -94,6 +94,10 @@
     var name1 = "<h2>"+name+"</h2>";
     var info = "<p> 距您" + x + "米  已有" + n + "个拼单</p>";
     var link = "<p><a class='btn btn-default' href='#' role='button' onclick='change()'>View details &raquo;</a></p>";
+
+    // Add collapse link or button
+    var collps = "<button data-toggle=" + "collapse" + " data-target=#request" + i + " > detail </button>";
+
     $("#shop0").append("<div class='col-lg-4' id=shop"+i+">"+pic + name1 + info + link + "</div>");
   }
 
