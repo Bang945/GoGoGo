@@ -36,6 +36,7 @@ public class Shop {
 	    this.geometry = geometry;
 	}
 	
+
     public static Shop transferToShop(JSONObject obj) {
         JSONObject geo = obj.getJSONObject("geometry").getJSONObject("location");
         Map<String, Double> geometry = new HashMap<String, Double>();
@@ -43,7 +44,7 @@ public class Shop {
             geometry.put("lat", (double) geo.getLong("lat"));
             geometry.put("lng", (double) geo.getLong("lng"));
         }
-        return new Shop(obj.getString("name"), obj.getString("id"), obj.getString("vincinity"), geometry);
+        return new Shop(obj.getString("name"), obj.getString("id"), obj.getString("vicinity"), geometry);
     }
     
 	public String getShopName() {
@@ -58,4 +59,35 @@ public class Shop {
 	public void setDeals(List<Deal> deals) {
 		this.deals = deals;
 	}
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getVicinity() {
+        return vicinity;
+    }
+
+    public void setVicinity(String vicinity) {
+        this.vicinity = vicinity;
+    }
+
+    public List<String> getType() {
+        return type;
+    }
+
+    public void setType(List<String> type) {
+        this.type = type;
+    }
+
+    public Map<String, Double> getGeometry() {
+        return geometry;
+    }
+
+    public void setGeometry(Map<String, Double> geometry) {
+        this.geometry = geometry;
+    }
 }
