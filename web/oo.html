@@ -33,18 +33,13 @@
 
     <!-- // <script src="index.js"></script> -->
 
+
+
 <script>
-  $(document).ready(function(){
-    // getLocation();
-    $(document).ready(function(){
-    // getLocation();
-    var JSONObject= {
-      "name":"Hot Pot",
-      "distance":100000,
-      "number":5};
+
       // TODO: Set lat and lng in form.
 
-
+/*
         $.ajax({
           type: "post",
           url: "/query.json",
@@ -68,7 +63,15 @@
             alert("Sorry! I don't know what to buy!");  
           }  
         })
- 
+ */
+
+    $(document).ready(function(){
+    // getLocation();
+    var JSONObject= {
+      "name":"Hot Pot",
+      "distance":100000,
+      "number":5};
+
 
     name0 = JSONObject.name;
     dis0 = JSONObject.distance;
@@ -77,6 +80,8 @@
 
 
     getShop(name0,dis0,number);
+    addDeal("Bang", "50%off", 1);
+    addDeal("Sun", "3jian8zhe", 2);
     // getShop("Pizza",1000000,3);
     $("#shop7").hide();
   });
@@ -85,20 +90,21 @@
   function addDeal(user, info, i) {
     var requestID = "<h2>"+i+"</h2>";
     var message = "<p>"+user+info+"</p>";
-    $("#request"+i).append("<div class='col-xs-6 col-lg-4' id=request"+i+">"+requestID + message+"<p><a class='btn btn-default' href='#'' role='button'>联系TA &raquo;</a></p></div>");
+    $("#deals").append("<div class='col-xs-6 col-lg-4' id=request"+i+">"+requestID + message+"<p><a class='btn btn-default' href='#'' role='button'>联系TA &raquo;</a></p></div>");
     
   }
 
-  function getShop(name, x, n,i){
+  function getShop(name, x, n, i){
     var pic = "<img class='img-circle' src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' alt='Generic placeholder image' style='width: 140px; height: 140px;'>";
     var name1 = "<h2>"+name+"</h2>";
     var info = "<p> 距您" + x + "米  已有" + n + "个拼单</p>";
     var link = "<p><a class='btn btn-default' href='#' role='button' onclick='change()'>View details &raquo;</a></p>";
 
     // Add collapse link or button
-    var collps = "<button data-toggle=" + "collapse" + " data-target=#request" + i + " > detail </button>";
+    var collps = "<button data-toggle='collapse' data-target='#deals' > detail </button>";
+    var deals = "<div id='deals'>aaa</div>" 
 
-    $("#shop0").append("<div class='col-lg-4' id=shop"+i+">"+pic + name1 + info + link + "</div>");
+    $("#shops").append("<div class='col-lg-4' id=shop"+i+">"+pic + name1 + info + collps + deals + "</div>");
   }
 
 
@@ -248,7 +254,9 @@
     <div class="container marketing" >
 
       <!-- Three columns of text below the carousel -->
-      <div class="row" id="shop0">
+
+      <div class="row" id="shops">
+
       </div><!-- /.row -->
 
 
