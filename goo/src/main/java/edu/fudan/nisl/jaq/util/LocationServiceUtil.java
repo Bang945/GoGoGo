@@ -14,7 +14,7 @@ public class LocationServiceUtil {
     private static String GOOGLE_API_KEY = "AIzaSyBARZOyD4L5FHUj8kNg9WXwowgickaGV7A";
     private static String GOOGLE_API_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
     private static String DEFAULT_SEARCH_TYPE = "clothing_store";
-    private static double DEFAULT_SEARCH_RADIUS = 60.0;
+    private static double DEFAULT_SEARCH_RADIUS = 100.0;
 
     private static String buildUrl(double lat, double lng, double radius, String type) {
         String url = GOOGLE_API_URL + "location=" + lat + "," + lng;
