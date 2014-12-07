@@ -40,9 +40,9 @@ public class Shop {
         JSONObject geo = obj.getJSONObject("geometry").getJSONObject("location");
         Map<String, Double> geometry = new HashMap<String, Double>();
         if (geo != null) {
-            System.out.println(Double.parseDouble(geo.getString("lat")));
-            geometry.put("lat", Double.parseDouble(geo.getString("lat")));
-            geometry.put("lng", Double.parseDouble(geo.getString("lng")));
+            System.out.println(geo.getDouble("lat"));
+            geometry.put("lat", geo.getDouble("lat"));
+            geometry.put("lng", geo.getDouble("lng"));
         }
         return new Shop(obj.getString("name"), obj.getString("id"), obj.getString("vicinity"), geometry);
     }
