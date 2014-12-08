@@ -15,6 +15,24 @@
     <script>
       var txt = $("#txt").val();
       console.log(txt);
+
+      $("#create").click()(function() {
+        getElementById("");
+        getElementById("");
+
+        $.ajax({
+          type: "post",
+          url: "/create.do",
+          data: $("createDealForm").serialize();
+          success: function(data) {  
+            alert("添加成功！"); 
+            window.navigate("index.jsp");    
+          },  
+          error: function(data) {  
+            alert(data);  
+          }  
+        })
+      });
     </script>
 
   </head>
@@ -31,7 +49,9 @@
       </div>
     <div class="container">
 
-      <div class="page-header">
+<form name="createDealForm" id="createDealForm">
+      <div class="page-header">        
+
         <h1>我要买</h1>
         <p class="lead">请填写相关信息.</p>
       </div>
@@ -62,7 +82,7 @@
       <p>请填写您会在这里停留多久。例如我会在13：00到13：30在这里</p>
       <div class="input-group input-group-lg">
         <span class="input-group-addon">时间</span>
-        <input type="text" class="form-control" placeholder="">
+        <input id="time" type="text" class="form-control" placeholder="">
       </div>
 
       <h3>备注</h3>
@@ -74,9 +94,11 @@
       <hr/>
       <div class="inner cover">
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-default">我要买</a>
+          <button name="create" id="create" href="#" class="btn btn-lg btn-default">我要买</a>
         </p>
       </div>
+</form>
+
     </div> <!-- /container -->
 
   </body>

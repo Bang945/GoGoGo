@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15,10 +16,59 @@
 
     <!-- Custom styles for this template -->
     <link href="look.css" rel="stylesheet">
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+
+      var txt = $("#txt").val();
+      console.log(txt);
+
+        
+
+      // TODO: Set deal id
+      $(document).ready(function() {
+
+        showDealInfor("QA", "sanzhe", "20141209");
+        // alert("ok!");
+
+        
+        // For each message
+        addMessage("Hello", "Bang", "sss", 1);
+
+
+
+
+      });
+
+     function addMessage(info, userName, time, i) {
+      // TODO: Add html item
+      var wrap = "<div id='message" + i + "'>";
+      wrap += "<div>" + userName + ":" + info + "</div>";
+      wrap += "<div>" + time + "</div>";
+      wrap += "</div>" ;
+      $("#dialog").append(wrap);
+     }
+
+     function showDealInfor(shop, info, deadline) {
+       var wrap = "<div>";
+       wrap += "<div>" + shop + "</div>";
+       wrap += "<div>" + info + "</div>";
+       wrap += "<div>" + deadline + "</div>";
+       wrap += "</div>" ;
+       $("#dealInfo").append(wrap);
+     }
+
+    </script>
+
   </head>
 
   <body>
   
+    <form id="dealIdForm" name="dealIdForm" disable="disable" />
+      <input type="hidden" id="dealId" name="dealId" value="" disable="disable" />
+    </form>
+
       <div class="header">
         <ul class="nav nav-pills pull-right" role="tablist">
           <li role="presentation" class="active"><a href="#">Home</a></li>
@@ -29,11 +79,16 @@
         <hr>
       </div>
 
+       <div id="dealInfo" class="article">
+     </div>
+      <div id="dialog" class="article">
+      </div>
 
+ <h3>满两件打八折</h3>
     <div class="container">
 
-      
-      <h3>满两件打八折</h3>
+    
+     
       <div class="article">
         <input type="hidden" id="start" value="0" />
         <div class="topic-content">
@@ -48,6 +103,7 @@
         </div>
         <p class="">我也要买，马上来，我穿着。。。</p>
     </div>
+
     <h3>你的回应</h3>
   <div class="txd">
         <form action="no_where_to_go">

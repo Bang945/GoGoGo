@@ -1,7 +1,12 @@
 message.json
 {
+    // TODO: add infomation of the deal by ID
+    // logs to messages; usersName to userName
+    "deal": {
+
+    }
+
     "logs": [
-        {
             "deal": 1,
             "id": 1,
             "info": "hello",
@@ -61,7 +66,7 @@ shop
 {
     "shops": [
         {
-            "deals": [
+            "deals": [ {}, {}
                 
             ],
             "distance": 7089.692865594559,

@@ -35,7 +35,7 @@ public class LocationServiceUtil {
         
         String res = response.readEntity(String.class);
         JSONArray results = ((JSONObject) JSONSerializer.toJSON(res)).getJSONArray("results");
-        System.out.println(results);
+        System.out.println(res);
         
         
         List<Shop>  shops = new ArrayList<Shop>();
@@ -43,6 +43,7 @@ public class LocationServiceUtil {
             shops.add(Shop.transferToShop((JSONObject) results.get(i)));
         }
         
+        System.out.println(shops.get(0).getShopName());
         return shops;
     }
 
