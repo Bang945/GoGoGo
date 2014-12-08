@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import edu.fudan.nisl.jaq.model.Deal;
 
 @Repository
-public class DealDAO  extends GenericHibernateDAO<Deal,Long> {
+public class DealDAO  extends GenericHibernateDAO<Deal,Integer> {
 	@SuppressWarnings("unchecked")
 	public List<Deal> findDealByShop(String shopName){
 		Query query = this.getSessionFactory().getCurrentSession().createQuery("from Deal as r where r.shop = ? and r.deadline > ? ");

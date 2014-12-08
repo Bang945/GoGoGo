@@ -11,7 +11,7 @@ public class Users implements java.io.Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private long id;
+	private int id;
 	private String usersName;
 	private String usersPassword;
 	private String usersPhone;
@@ -22,12 +22,12 @@ public class Users implements java.io.Serializable {
 	public Users() {
 	}
 
-	public Users(long id, String usersName) {
+	public Users(int id, String usersName) {
 		this.id = id;
 		this.usersName = usersName;
 	}
 
-	public Users(long id, String usersName, String usersPassword,
+	public Users(int id, String usersName, String usersPassword,
 			String usersPhone, String usersEmail, Long usersRoleId, String usersInfo) {
 		this.id = id;
 		this.usersName = usersName;
@@ -38,11 +38,11 @@ public class Users implements java.io.Serializable {
 		this.usersInfo = usersInfo;
 	}
 
-	public long getId() {
+	public int getId() {
 		return this.id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

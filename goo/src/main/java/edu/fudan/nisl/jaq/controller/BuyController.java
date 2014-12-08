@@ -39,6 +39,7 @@ public class BuyController {
 	public @ResponseBody Object listAllChat(int dealId) {			
 		JSONObject json = new JSONObject();
 		json.put("logs", dealService.queryChat(dealId));
+		json.put("dealInfo", dealService.queryExactDealInfo(dealId));
 		return json;
 	}
 	

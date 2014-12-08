@@ -13,7 +13,7 @@ import edu.fudan.nisl.jaq.model.Shop;
 public class LocationServiceUtil {
     private static String GOOGLE_API_KEY = "AIzaSyBARZOyD4L5FHUj8kNg9WXwowgickaGV7A";
     private static String GOOGLE_API_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
-    private static String DEFAULT_SEARCH_TYPE = "food";
+    private static String DEFAULT_SEARCH_TYPE = "clothing_store";
     private static double DEFAULT_SEARCH_RADIUS = 100.0;
 
     private static String buildUrl(double lat, double lng, double radius, String type) {
@@ -48,7 +48,7 @@ public class LocationServiceUtil {
 
     public static void main(String[] args) {
         double lat = 31.236776799999998, lng = 121.5027612;
-        getNearby(lat, lng);
+        LocationServiceUtil.getNearby(lat, lng);
     }
     
 }

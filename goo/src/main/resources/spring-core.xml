@@ -79,7 +79,7 @@
 			<tx:method name="find*" propagation="REQUIRED" read-only="true" />
 			<tx:method name="query*" propagation="REQUIRED" read-only="true" />
 			<tx:method name="list*" propagation="REQUIRED" read-only="true" />
-			<tx:method name="*" read-only="true" />
+			<tx:method name="*"/>
 		</tx:attributes>
 	</tx:advice>
 	<tx:annotation-driven transaction-manager="txManager" />
